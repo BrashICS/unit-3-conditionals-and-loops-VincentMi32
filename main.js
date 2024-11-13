@@ -16,6 +16,11 @@
 
 
 /*** Functions ***/
+let input = Number(prompt('Enter a number.'));
+
+if (isNaN(input))
+  input = Number(prompt("Please enter a number."));
+
 
 // A very accurate rounding function
 function round(value, decimals) {
@@ -57,6 +62,34 @@ if (choice === '1') {
     console.log("Exiting the game...");
 } else {
     console.log("Invalid choice. Please select a valid option.");
+}
+
+function average(n) {
+    let avg= 0;
+    let count = 1;
+
+    while (count <= n) {
+        avg = avg + Number(prompt('Please enter  value ${count}/${n}'));
+    }
+    avg = round(avg /n, 1);
+    console.log('the average is ${avg}}');
+}
+function random_until(min, max, stop) {
+    
+    if (max<= min) {
+        return -1;
+    }
+    
+    if (stop < min || stop > max) {
+        return -1;
+    } 
+    let rnd = randInt(min, max);
+
+    while (rnd != stop){
+        console.log(rnd)
+        rnd = randInt(min, max);
+    }
+    return stop;
 }
 
 
