@@ -12,10 +12,11 @@
 'use strict';
 
 /*** Event Listeners ***/
-
+document.log
 
 
 /*** Functions ***/
+
 
 // A very accurate rounding function
 function round(value, decimals) {
