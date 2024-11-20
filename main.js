@@ -93,7 +93,19 @@ function random_until(min, max, stop) {
     return stop;
 }
 
-
+function test(num){
+    if(name == "Mr. Squirrel") {
+        console.log('Hello! you are ${age} years old')
+        return true;
+    } else if(age == 1) {
+        consle.log("Happy Brithday!")
+    } else if(age == 44 && name ==Matt) {
+            console.log("Hi Mr. Brash")
+    } else {
+        consle.log("I don't know you...")
+    }
+    
+}
 
 
 
